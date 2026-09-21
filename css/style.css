@@ -1,602 +1,262 @@
-/* =========================
-   GENERAL
-========================= */
-
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background: #f5f3ff;
     color: #17152b;
 }
 
-
-/* =========================
-   NAVBAR
-========================= */
+/* Navbar */
 
 nav {
-    background-color: #17152b;
-    padding: 18px 60px;
+    background: #17152b;
+    padding: 18px;
     text-align: right;
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    margin-left: 28px;
-    font-size: 15px;
+    margin: 0 15px;
 }
 
 nav a:hover {
     color: #8b7cff;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* Home */
 
 .hero {
-    min-height: 500px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     text-align: center;
-
-    background-color: #f1efff;
-
-    padding: 70px 20px;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
-    color: #17152b;
-}
-
-.hero h1::first-line {
-    color: #17152b;
-}
-
-.hero p {
-    font-size: 19px;
-    line-height: 1.7;
-    color: #55516f;
-    margin-bottom: 30px;
-}
-
-.hero a {
-    display: inline-block;
-
-    background-color: #6c63ff;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 14px 30px;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-.hero a:hover {
-    background-color: #554ce6;
-    transform: translateY(-2px);
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-    background-color: #ffffff;
-
-    text-align: center;
-
-    padding: 65px 20px;
-}
-
-.about h2 {
-    font-size: 32px;
-    color: #17152b;
-}
-
-.about p {
-    max-width: 750px;
-
-    margin: auto;
-
-    line-height: 1.7;
-
-    color: #5c5875;
-}
-
-
-/* =========================
-   FEATURES
-========================= */
-
-.features {
-    text-align: center;
-
-    padding: 65px 20px;
-
-    background-color: #f5f3ff;
-}
-
-.features h2 {
-    font-size: 32px;
-    color: #17152b;
-}
-
-.feature-list {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-
-    margin-top: 35px;
-}
-
-.feature-box {
-    background-color: #ffffff;
-
-    width: 240px;
-
-    padding: 30px 22px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 18px rgba(23, 21, 43, 0.08);
-
-    transition: 0.3s;
-}
-
-.feature-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.18);
-}
-
-.feature-box h3 {
-    color: #17152b;
-    margin-top: 0;
-}
-
-.feature-box p {
-    color: #66627d;
-    line-height: 1.5;
-}
-
-
-/* =========================
-   POPULAR EVENTS
-========================= */
-
-.popular-events {
-    background-color: #ffffff;
-
-    text-align: center;
-
-    padding: 65px 20px;
-}
-
-.popular-events h2 {
-    font-size: 32px;
-    color: #17152b;
-}
-
-.event-container {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 28px;
-
-    flex-wrap: wrap;
-
-    margin-top: 35px;
-}
-
-.event-card {
-    background-color: #ffffff;
-
-    width: 290px;
-
-    padding: 28px;
-
-    border-radius: 12px;
-
-    text-align: left;
-
-    border: 1px solid #e8e5ff;
-
-    box-shadow: 0 5px 18px rgba(23, 21, 43, 0.08);
-
-    transition: 0.3s;
-}
-
-.event-card:hover {
-    transform: translateY(-7px);
-
-    box-shadow: 0 12px 28px rgba(108, 99, 255, 0.18);
-}
-
-.event-card h3 {
-    font-size: 22px;
-
-    margin-top: 0;
-
-    color: #17152b;
-}
-
-.event-card p {
-    color: #66627d;
-
-    margin: 11px 0;
-}
-
-.event-card a {
-    display: inline-block;
-
-    margin-top: 15px;
-
-    padding: 11px 20px;
-
-    background-color: #6c63ff;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    transition: 0.3s;
-}
-
-.event-card a:hover {
-    background-color: #554ce6;
-}
-
-
-/* =========================
-   WHY CHOOSE US
-========================= */
-
-.why-us {
-    background-color: #f1efff;
-
-    text-align: center;
-
-    padding: 65px 20px;
-}
-
-.why-us h2 {
-    font-size: 32px;
-
-    color: #17152b;
-}
-
-.why-container {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 28px;
-
-    flex-wrap: wrap;
-
-    margin-top: 35px;
-}
-
-.why-card {
-    background-color: #ffffff;
-
-    width: 290px;
-
-    padding: 28px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 18px rgba(23, 21, 43, 0.08);
-}
-
-.why-card h3 {
-    color: #17152b;
-
-    margin-top: 0;
-}
-
-.why-card p {
-    color: #66627d;
-
-    line-height: 1.6;
-}
-
-
-/* =========================
-   CALL TO ACTION
-========================= */
-
-.cta {
-    background-color: #17152b;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 65px 20px;
-}
-
-.cta h2 {
-    font-size: 32px;
-
-    margin-bottom: 15px;
-}
-
-.cta p {
-    color: #d6d3e8;
-
-    margin-bottom: 28px;
-}
-
-.cta a {
-    display: inline-block;
-
-    background-color: #6c63ff;
-
-    color: white;
-
-    text-decoration: none;
-
-    padding: 13px 28px;
-
-    border-radius: 7px;
-
-    transition: 0.3s;
-}
-
-.cta a:hover {
-    background-color: #8b83ff;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background-color: #0f0d20;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 22px;
-}
-
-footer p {
-    margin: 6px;
-
-    color: #c9c6dc;
-}
-
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
-@media (max-width: 768px) {
-
-    nav {
-        text-align: center;
-
-        padding: 15px;
-    }
-
-    nav a {
-        display: inline-block;
-
-        margin: 7px 10px;
-    }
-
-    .hero {
-        min-height: 420px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .feature-box,
-    .event-card,
-    .why-card {
-        width: 90%;
-
-        max-width: 350px;
-    }
-}
-
-/* ============================= */
-/* EVENTS PAGE */
-/* ============================= */
-
-.events-header {
-    text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
     background: #f1efff;
 }
 
-.events-header h1 {
-    font-size: 40px;
-    color: #17152b;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 45px;
 }
 
-.events-header p {
+.hero p {
     font-size: 18px;
     color: #555;
 }
 
-
-/* Search and Filter */
-
-.event-filter {
-    padding: 40px 8%;
-    text-align: center;
-    background: #ffffff;
+.hero a,
+.event-card a,
+.listing-card a,
+.cta a {
+    display: inline-block;
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.event-filter h2 {
-    color: #17152b;
-    margin-bottom: 25px;
+.about,
+.features,
+.popular-events,
+.why-us,
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feature-list,
+.event-container,
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box,
+.event-card,
+.why-card,
+.listing-card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.feature-box p,
+.event-card p,
+.why-card p {
+    color: #555;
+}
+
+/* Events */
+
+.events-header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.event-filter {
+    text-align: center;
+    padding: 25px;
+    background: white;
 }
 
 .filter-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
 .filter-container input,
-.filter-container select {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 15px;
-    min-width: 180px;
+.filter-container select,
+.filter-container button {
+    padding: 10px;
 }
 
 .filter-container button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 6px;
     background: #6c63ff;
     color: white;
-    font-size: 15px;
-    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
 }
 
-
-/* Event Listing */
-
 .events-list {
-    padding: 50px 8%;
-    background: #f5f3ff;
+    padding: 40px 8%;
 }
 
 .events-list h2 {
     text-align: center;
-    color: #17152b;
-    margin-bottom: 35px;
 }
 
 .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
 }
 
+/* Team Member Pages */
 
-/* Event Card */
-
-.listing-card {
-    background: white;
+body > h1 {
+    background: #17152b;
+    color: white;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s;
+    margin: 0;
 }
 
-.listing-card:hover {
-    transform: translateY(-5px);
-}
-
-.event-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.listing-card h3 {
-    color: #17152b;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-.listing-card p {
-    color: #555;
-    margin: 8px 0;
-}
-
-.event-price {
-    color: #6c63ff !important;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 15px !important;
-}
-
-.listing-card a {
+body > a {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
+    margin: 15px 5px 15px 20px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+body > h2 {
+    text-align: center;
+    margin: 35px 20px 20px;
+}
+
+body > h3 {
+    color: #6c63ff;
+    margin: 25px 30px 10px;
+}
+
+body > p,
+body > ul {
+    margin: 10px 30px;
+    line-height: 1.6;
+}
+
+body > hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 25px 30px;
+}
+
+body button {
     background: #6c63ff;
     color: white;
-    text-decoration: none;
-    border-radius: 6px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.listing-card a:hover {
-    background: #554de0;
+/* Footer */
+
+footer {
+    background: #17152b;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-
-/* Responsive Design */
+/* Mobile */
 
 @media (max-width: 768px) {
 
-    .events-header h1 {
-        font-size: 32px;
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
     }
 
     .events-grid {
         grid-template-columns: 1fr;
     }
 
-    .filter-container {
-        flex-direction: column;
+    .hero h1 {
+        font-size: 35px;
     }
+}
 
-    .filter-container input,
-    .filter-container select,
-    .filter-container button {
-        width: 100%;
-        max-width: 350px;
-    }
+/* Login & Signup */
 
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.auth-card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-card label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+.auth-card input,
+.auth-card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 5px;
 }
