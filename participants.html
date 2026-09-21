@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h2>Participants</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="participants.html" class="active">Participants</a></li>
+                <li><a href="auth.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Participants</h1>
+            <p>View registered participants and their details.</p>
+        </section>
+
+        <section class="filter-section">
+            <input type="text" placeholder="Search participant by name or email..." class="search-input">
+            <select class="filter-select">
+                <option value="">All Categories</option>
+                <option value="tech">Tech Conference 2026</option>
+                <option value="music">Music Concert</option>
+                <option value="workshop">Web Dev Workshop</option>
+            </select>
+        </section>
+
+        <section class="table-container">
+            <table class="participants-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Participant Name</th>
+                        <th>Email Address</th>
+                        <th>Title</th>
+                        <th>Ticket Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mohit Chahar</td>
+                        <td>mohit@example.com</td>
+                        <td>Tech Conference 2026</td>
+                        <td>VIP Pass</td>
+                        <td><span class="badge confirmed">Confirmed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Madhav Gupta</td>
+                        <td>madhav@example.com</td>
+                        <td>Music Concert</td>
+                        <td>General Pass</td>
+                        <td><span class="badge confirmed">Confirmed</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Krishnakant Upmanyu</td>
+                        <td>krishnakant@example.com</td>
+                        <td>Web Dev Workshop</td>
+                        <td>Student Pass</td>
+                        <td><span class="badge pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lucky Daksh</td>
+                        <td>lucky@example.com</td>
+                        <td>Tech Conference 2026</td>
+                        <td>VIP Pass</td>
+                        <td><span class="badge confirmed">Confirmed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

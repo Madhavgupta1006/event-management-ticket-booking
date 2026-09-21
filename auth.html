@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h2>Participants</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="participants.html">Participants</a></li>
+                <li><a href="auth.html" class="active">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container auth-container">
+        
+        <section class="auth-card">
+            <h2>User Login</h2>
+            <form action="#" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </section>
+
+        <section class="auth-card">
+            <h2>Create an Account</h2>
+            <form action="#" method="POST" class="auth-form">
+                <div class="form-group">
+                    <label for="signup-fullname">Full Name</label>
+                    <input type="text" id="signup-fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-role">Register As</label>
+                    <select id="signup-role" name="role" required>
+                        <option value="participant">Participant</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-secondary">Sign Up</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
