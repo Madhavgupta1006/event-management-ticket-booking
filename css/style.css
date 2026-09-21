@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    color: #17152b;
+}
+
+/* Navbar */
+
+nav {
+    background: #17152b;
+    padding: 18px;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #8b7cff;
+}
+
+/* Home */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f1efff;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+.hero a,
+.event-card a,
+.listing-card a,
+.cta a {
+    display: inline-block;
+    background: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about,
+.features,
+.popular-events,
+.why-us,
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feature-list,
+.event-container,
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box,
+.event-card,
+.why-card,
+.listing-card {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.feature-box p,
+.event-card p,
+.why-card p {
+    color: #555;
+}
+
+/* Events */
+
+.events-header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.event-filter {
+    text-align: center;
+    padding: 25px;
+    background: white;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-container input,
+.filter-container select,
+.filter-container button {
+    padding: 10px;
+}
+
+.filter-container button {
+    background: #6c63ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.events-list {
+    padding: 40px 8%;
+}
+
+.events-list h2 {
+    text-align: center;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Team Member Pages */
+
+body > h1 {
+    background: #17152b;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+body > a {
+    display: inline-block;
+    margin: 15px 5px 15px 20px;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+body > h2 {
+    text-align: center;
+    margin: 35px 20px 20px;
+}
+
+body > h3 {
+    color: #6c63ff;
+    margin: 25px 30px 10px;
+}
+
+body > p,
+body > ul {
+    margin: 10px 30px;
+    line-height: 1.6;
+}
+
+body > hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 25px 30px;
+}
+
+body button {
+    background: #6c63ff;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    background: #17152b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+/* Login & Signup */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.auth-card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-card label {
+    display: block;
+    margin: 12px 0 5px;
+}
+
+.auth-card input,
+.auth-card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 5px;
+}
